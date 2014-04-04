@@ -5,6 +5,9 @@ class SiteController extends Controller
 	/**
 	 * Declares class-based actions.
 	 */
+
+	public $layout = '//layouts/inner';
+
 	public function actions()
 	{
 		return array(
@@ -29,6 +32,7 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
+		$this->layout = '//layouts/main';
 		$this->render('index');
 	}
 
@@ -57,15 +61,44 @@ class SiteController extends Controller
 			$model->attributes=$_POST['ContactForm'];
 			if($model->validate())
 			{
-				$name='=?UTF-8?B?'.base64_encode($model->name).'?=';
-				$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
-				$headers="From: $name <{$model->email}>\r\n".
-					"Reply-To: {$model->email}\r\n".
-					"MIME-Version: 1.0\r\n".
-					"Content-Type: text/plain; charset=UTF-8";
+				$dbModel = new Contact;
+				$dbModel->name = $model->name;
+				$dbModel->email = $model->email;
+				$dbModel->phone = $model->phone;
+				$dbModel->create_time = time();
+				$dbModel->save();
 
-				mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
-				Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
+				$files = CUploadedFile::getInstancesByName('files');
+				$log = '';
+
+				if (isset($files) && count($files) > 0) {
+
+		                // go through each uploaded image
+		                foreach ($files as $index => $file) {
+
+		                	$path = Yii::getPathOfAlias('webroot').'/upload/contacts/'.$dbModel->id;
+		                	
+		                	if(!is_dir($path)){
+		                		mkdir($path, 0755, true);
+		                	}
+
+		                    echo $file->name.'<br />';
+		                    if ($file->saveAs($path.'/'.$file->name)) {
+		                        // add it to the main model now
+		                        $file_add = new ContactFile();
+		                        $file_add->path = $file->name; //it might be $file_add->name for you, filename is just what I chose to call it in my model
+		                        $file_add->contact_id = $dbModel->id; // this links your picture model to the main model (like your user, or profile model)
+		                        $file_add->save(); // DONE
+		 						$log .= print_r($file_add, true);
+		                    }
+		                    else {
+		                        // handle the errors here, if you want
+		                    }
+		                }   
+		        }
+
+				//Yii::app()->user->setFlash('contact', count($files));
+				Yii::app()->user->setFlash('contact','Спасибо! Мы рассмотрим вашу заявку и перезвоним вам в ближайшее время.'.$dbModel->id.$log);
 				$this->refresh();
 			}
 		}

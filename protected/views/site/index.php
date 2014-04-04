@@ -4,17 +4,133 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+      
+  <div class="heading">
+  
+    <div class="row head_row">
+       <div ><h1 class=""><span class="heading_center_bg">ООО « Системный Администратор »</span></h1>
+        <div class='header-contacts'>
+            <div class='phone'><i class='fa fa-phone'></i>+7 (901) 571-78-82</div>
+            <div class='email'><i class='fa fa-envelope'></i><a href='mailto:baho@sys-admin.su'>admin@sys-admin.su</a></div>
+        </div>
+      </div>
+     </div>
+     
+  </div><!-- end row -->
+  
 
-<p>Congratulations! You have successfully created your Yii application.</p>
+<div class="row advantages">
+        <div class="three columns">
+          <h3><span class="dropcap_green">1</span> Опыт</h3>
 
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <code><?php echo __FILE__; ?></code></li>
-	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
-</ul>
+          <p> За более чем 5 лет работы на российском рынке компания <strong>ООО&nbsp;«Системный&nbsp;администратор»</strong> зарекомендовала себя, как устойчивая и динамично развивающаяся компания. </p>
+        </div>
 
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+        <div class="three columns">
+          <h3><span class="dropcap_green">2</span> Кадры </h3>
+
+          <p>Высококлассные специалисты  и передовые технологии позволяют компании эффективно решать самые актуальные задачи комплексного обслуживания клиентов в IT сфере</p>
+        </div>
+
+        <div class="three columns">
+          <h3><span class="dropcap_green">3</span> Оборудование</h3>
+
+          <p> У нас вы можете взять в аренду любое лицензионное ПО Microsoft. Также вы можете разместить у нас свое оборудование (<strong>VPS</strong>&nbsp;и&nbsp;<strong>Colocation</strong>).</p>
+        </div>
+        
+        <div class="three columns">
+          <h3><span class="dropcap_green">4</span> Партнеры</h3>
+
+          <p>ООО &laquo;Системный Администратор&raquo; имеет статус официального партнера <strong>Microsoft</strong>, а специалисты компании имеют международные сертификаты <strong>Cisco</strong>, <strong>HP</strong>, <strong>Microsoft</strong>.</p>
+        </div>
+        
+      </div><!-- end row -->
+      
+     <hr/>
+      
+      <div class="row services" style="padding-top: 20px">
+      
+        <div class="four columns">
+           <h3>HelpDesk</h3>
+          <p>
+            <ul>
+              <li>Обслуживание компьютеров, принтеров и другой офисной техники</li>
+              <li>Установка, настройка и исправление программного обеспечения</li>
+              <li>Обучение пользователей</li>
+              <li>Консультации пользователей 24 часа в сутки</li>
+              <li>Поиск и удаление вирусов</li>
+              <li>Закупка и подбор компьютеров и ПО конкретно под ваши задачи</li>
+              <li>Заправка, ремонт и закупка картриджей</li>
+            </ul>
+          </p>
+        </div>
+        
+        <div class="four columns">
+           <h3>Инженерная поддержка</h3>
+          <p>
+            <ul>
+              <li>Аудит имеющийся IT инфраструктуры - для выявления скрытых неисправностей и возможных инцидентов.</li>
+              <li>Подготовка и реализация проекта по оптимизации имеющейся у Вас IT инфраструктуры</li>
+              <li>Монтаж стоек, шкафов, прокладка оптики, прокладка сетей под ключ</li>
+              <li>Создание IT инфраструктуры с нуля в соответствии с вашими потребностями</li>
+              <li>Создание системы резервного копирования</li>
+              <li>Развертывание корпоративных систем антивирусной защиты</li>
+              <li>Постоянный мониторинг состояния IT инфраструктуры - является превентивной мерой.</li>
+            </ul>
+          </p>
+     </div>
+        
+        <div class="four columns">
+           <h3>VPS и Colocation</h3>
+           <p>
+              <ul>
+                <li>Аренда любого лицензионного ПО Microsoft</li>
+                <li>Аренда виртуального пространства на наших серверах</li>
+                <li>Физическое размещение ваших серверов на нашей платформе</li>
+                <li>Виртуализация ваших серверов для повышения отказоустойчивости и мобильности серверов.</li>
+                <li>Обеспечение бесперебойного удаленного доступа к вашим данным</li>
+              </ul>
+           </p>
+        </div>
+        
+      </div><!-- end row -->
+        <div class="row services" style="padding-top: 20px">
+      
+        <div class="four columns">
+           <h3>VOIP-телефония</h3>
+          <p>
+            <ul>
+              <li> Создание IP-телефонии во всех ваших офисах под ключ </li>
+              <li> Запись приветствия профессиональными дикторами </li>
+              <li> Получение многоканальных московских номеров для вашей компании</li>
+              <li> Обслуживание телефонии, закупка и установка необходимого оборудования</li>
+            </ul>
+          </p>
+
+        </div>
+        
+        <div class="four columns">
+           <h3>Установка и сопровождение 1С</h3>
+          <p>
+            <ul>
+              <li> Закупка и развертывание любых версий 1С </li>
+              <li>Доработка существующих версий 1С</li>
+              <li>Наличие собственной платформы</li>
+              <li>Обслуживание 1С любых версий и конфигураций</li>
+              <li>Перевод с версии 7.7 на 8.1 или 8.2</li>
+
+            </ul>
+          </p>
+     </div>
+        
+        <div class="four columns">
+           <h3>Видеонаблюдение</h3>
+           <p>
+              <ul>
+                <li>Закупка, установка и настройка видеонаблюдения любой сложности</li>
+                <li>Установка датчиков движения, видеодомофонов, микрофонов</li>
+
+
+              </ul>
+           </p>
+        </div>

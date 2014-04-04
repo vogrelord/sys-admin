@@ -1,4 +1,4 @@
-;(function ($, window, undefined) {
+/*;(function ($, window, undefined) {
   'use strict';
 
   var $doc = $(document),
@@ -8,7 +8,7 @@
   $.fn.foundationAlerts           ? $doc.foundationAlerts() : null;
   $.fn.foundationAccordion        ? $doc.foundationAccordion() : null;
   $.fn.foundationTooltips         ? $doc.foundationTooltips() : null;
-  $('input, textarea').placeholder();
+  //$('input, textarea').placeholder();
   
   
   $.fn.foundationButtons          ? $doc.foundationButtons() : null;
@@ -21,7 +21,7 @@
   
   
   $.fn.foundationMediaQueryViewer ? $doc.foundationMediaQueryViewer() : null;
-  
+   
     
     $.fn.foundationTabs             ? $doc.foundationTabs() : null;
     
@@ -46,3 +46,4 @@
   }
 
 })(jQuery, this);
+*/
