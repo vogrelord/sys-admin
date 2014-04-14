@@ -24,8 +24,6 @@ $this->pageTitle = 'Юридические документы';
 	<?php endforeach; ?>
 
 
-	<h3>Прочие документы</h3>
-
 	<ol>
 		<?php foreach ($freeDocuments as $key => $doc):?>
 				<li>

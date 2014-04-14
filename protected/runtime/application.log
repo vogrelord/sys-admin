@@ -2151,3 +2151,63 @@ Stack trace:
 REQUEST_URI=/sys-admin/index.php?r=index
 HTTP_REFERER=http://localhost/sys-admin/index.php?r=index
 ---
+2014/04/14 15:00:25 [error] [exception.CException] exception 'CException' with message 'Alias "vendor.schmunk42.database-command.EDatabaseCommand" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:347
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(196): YiiBase::import('vendor.schmunk4...', true)
+#1 /var/www/yii/framework/console/CConsoleCommandRunner.php(173): YiiBase::createComponent(Array, 'database', Object(CConsoleCommandRunner))
+#2 /var/www/yii/framework/console/CConsoleCommandRunner.php(67): CConsoleCommandRunner->createCommand('database')
+#3 /var/www/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#4 /var/www/yii/framework/base/CApplication.php(180): CConsoleApplication->processRequest()
+#5 /var/www/yii/framework/yiic.php(33): CApplication->run()
+#6 /var/www/sys-admin/protected/yiic.php(7): require_once('/var/www/yii/fr...')
+#7 /var/www/sys-admin/protected/yiic(4): require_once('/var/www/sys-ad...')
+#8 {main}
+---
+2014/04/14 15:01:37 [error] [exception.CException] exception 'CException' with message 'Alias "commands.database-command.EDatabaseCommand" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:347
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(196): YiiBase::import('commands.databa...', true)
+#1 /var/www/yii/framework/console/CConsoleCommandRunner.php(173): YiiBase::createComponent(Array, 'database', Object(CConsoleCommandRunner))
+#2 /var/www/yii/framework/console/CConsoleCommandRunner.php(67): CConsoleCommandRunner->createCommand('database')
+#3 /var/www/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#4 /var/www/yii/framework/base/CApplication.php(180): CConsoleApplication->processRequest()
+#5 /var/www/yii/framework/yiic.php(33): CApplication->run()
+#6 /var/www/sys-admin/protected/yiic.php(7): require_once('/var/www/yii/fr...')
+#7 /var/www/sys-admin/protected/yiic(4): require_once('/var/www/sys-ad...')
+#8 {main}
+---
+2014/04/14 15:01:42 [error] [exception.CException] exception 'CException' with message 'Alias "commands.database-command.EDatabaseCommand" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:347
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(196): YiiBase::import('commands.databa...', true)
+#1 /var/www/yii/framework/console/CConsoleCommandRunner.php(173): YiiBase::createComponent(Array, 'database', Object(CConsoleCommandRunner))
+#2 /var/www/yii/framework/console/CConsoleCommandRunner.php(67): CConsoleCommandRunner->createCommand('database')
+#3 /var/www/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#4 /var/www/yii/framework/base/CApplication.php(180): CConsoleApplication->processRequest()
+#5 /var/www/yii/framework/yiic.php(33): CApplication->run()
+#6 /var/www/sys-admin/protected/yiic.php(7): require_once('/var/www/yii/fr...')
+#7 /var/www/sys-admin/protected/yiic(4): require_once('/var/www/sys-ad...')
+#8 {main}
+---
+2014/04/14 15:02:36 [error] [exception.CException] exception 'CException' with message 'Alias "vendor.database-command.EDatabaseCommand" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:347
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(196): YiiBase::import('vendor.database...', true)
+#1 /var/www/yii/framework/console/CConsoleCommandRunner.php(173): YiiBase::createComponent(Array, 'database', Object(CConsoleCommandRunner))
+#2 /var/www/yii/framework/console/CConsoleCommandRunner.php(67): CConsoleCommandRunner->createCommand('database')
+#3 /var/www/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#4 /var/www/yii/framework/base/CApplication.php(180): CConsoleApplication->processRequest()
+#5 /var/www/yii/framework/yiic.php(33): CApplication->run()
+#6 /var/www/sys-admin/protected/yiic.php(7): require_once('/var/www/yii/fr...')
+#7 /var/www/sys-admin/protected/yiic(4): require_once('/var/www/sys-ad...')
+#8 {main}
+---
+2014/04/14 15:02:43 [error] [exception.CException] exception 'CException' with message 'Alias "vendor.database-command.EDatabaseCommand" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:347
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(196): YiiBase::import('vendor.database...', true)
+#1 /var/www/yii/framework/console/CConsoleCommandRunner.php(173): YiiBase::createComponent(Array, 'database', Object(CConsoleCommandRunner))
+#2 /var/www/yii/framework/console/CConsoleCommandRunner.php(67): CConsoleCommandRunner->createCommand('database')
+#3 /var/www/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#4 /var/www/yii/framework/base/CApplication.php(180): CConsoleApplication->processRequest()
+#5 /var/www/yii/framework/yiic.php(33): CApplication->run()
+#6 /var/www/sys-admin/protected/yiic.php(7): require_once('/var/www/yii/fr...')
+#7 /var/www/sys-admin/protected/yiic(4): require_once('/var/www/sys-ad...')
+#8 {main}
+---

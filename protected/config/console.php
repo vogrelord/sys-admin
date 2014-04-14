@@ -9,6 +9,12 @@ return array(
 	// preloading 'log' component
 	'preload'=>array('log'),
 
+	'commandMap' => array(
+	    'database' => array(
+	        'class' => 'vendor.database-command.EDatabaseCommand',
+	    ),
+	),
+
 	// application components
 	'components'=>array(
 		'db'=>array(
