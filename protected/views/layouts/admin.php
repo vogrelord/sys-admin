@@ -256,6 +256,11 @@
             
                     <li>
                         <a href="<?php print CController::createUrl('/document/admin') ?>"><i class="fa fa-dashboard fa-fw"></i>Управлять документами</a>
+                    </li>
+                    <li>
+                        <a href="<?php print CController::createUrl('/documentCategory/admin') ?>"><i class="fa fa-dashboard fa-fw"></i>Категории</a>
+                    </li>
+                    <li>
                         <a href="<?php print CController::createUrl('/contact/admin') ?>"><i class="fa fa-dashboard fa-fw"></i>Просмотреть заявки</a>
                     </li>
                     
